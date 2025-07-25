@@ -58,23 +58,22 @@
             margin-bottom: 1.5rem;
         }
 
+        /* Convert logo to background image */
         .logo {
           width: 160px;
           height: 160px;
           display: flex;
           align-items: center;
           justify-content: center;
+          background-image: url('images/logo/Logo-cropped_transparent.svg');
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-radius: 8px;
         }
 
         .logo::before {
             content: none;
-        }
-
-        .logo img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-          border-radius: 8px;
         }
 
         .brand-name {
@@ -257,15 +256,56 @@
             box-shadow: 0 15px 35px rgba(200, 49, 118, 0.2);
         }
 
-        .photo-item img {
+        /* Convert gallery images to background images */
+        .photo-image {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             transition: transform 0.3s ease;
         }
 
-        .photo-item:hover img {
+        .photo-item:hover .photo-image {
             transform: scale(1.05);
+        }
+
+        /* Specific background images for Sopron retreat */
+        .photo-image.sopron-1 {
+            background-image: url('images/gallery/Sopron 1.jpg');
+        }
+
+        .photo-image.sopron-2 {
+            background-image: url('images/gallery/Sopron 2.jpg');
+        }
+
+        .photo-image.sopron-3 {
+            background-image: url('images/gallery/Sopron 3.jpg');
+        }
+
+        .photo-image.sopron-4 {
+            background-image: url('images/gallery/Sopron 4.jpg');
+        }
+
+        .photo-image.sopron-5 {
+            background-image: url('images/gallery/Sopron 5.jpg');
+        }
+
+        .photo-image.sopron-6 {
+            background-image: url('images/gallery/Sopron 6.jpg');
+        }
+
+        /* Specific background images for Lipot retreat */
+        .photo-image.lipot-1 {
+            background-image: url('images/gallery/Lipot 1.jpg');
+        }
+
+        .photo-image.lipot-2 {
+            background-image: url('images/gallery/Lipot 2.jpg');
+        }
+
+        .photo-image.lipot-3 {
+            background-image: url('images/gallery/Lipot 3.jpg');
         }
 
         .photo-overlay {
@@ -435,9 +475,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo-container">
-                    <div class="logo">
-                        <img src="Logo-cropped_transparent.svg" alt="The Mindful BAse Logo">
-                    </div>
+                    <div class="logo"></div>
                     <h1 class="brand-name">The Mindful <strong>BAse</strong></h1>
                 </div>
                 <p class="motto">
@@ -482,42 +520,42 @@
 
                         <div class="photo-grid grid-3x2">
                             <div class="photo-item">
-                                <img src="Sopron 1.jpg" alt="Hill walk">
+                                <div class="photo-image sopron-1"></div>
                                 <div class="photo-overlay">
                                     <h5>Hill walk</h5>
                                     <p>Connecting with the local environment</p>
                                 </div>
                             </div>
                             <div class="photo-item">
-                                <img src="Sopron 2.jpg" alt="Outdoor group activity">
+                                <div class="photo-image sopron-2"></div>
                                 <div class="photo-overlay">
                                     <h5>Outdoor group activity</h5>
                                     <p>Building bridges through awareness</p>
                                 </div>
                             </div>
                             <div class="photo-item">
-                                <img src="Sopron 3.jpg" alt="Interactive workshop">
+                                <div class="photo-image sopron-3"></div>
                                 <div class="photo-overlay">
                                     <h5>Interactive workshop</h5>
                                     <p>Fostering empathy and connection</p>
                                 </div>
                             </div>
                             <div class="photo-item">
-                                <img src="Sopron 4.jpg" alt="Connecting to nature">
+                                <div class="photo-image sopron-4"></div>
                                 <div class="photo-overlay">
                                     <h5>Interactive activity</h5>
                                     <p>Promoting active listening</p>
                                 </div>
                             </div>
                             <div class="photo-item">
-                                <img src="Sopron 5.jpg" alt="Yoga class">
+                                <div class="photo-image sopron-5"></div>
                                 <div class="photo-overlay">
                                     <h5>Silent forest walk</h5>
                                     <p>Connecting with ourselves and nature</p>
                                 </div>
                             </div>
                             <div class="photo-item">
-                                <img src="Sopron 6.jpg" alt="Mindfulness workshop">
+                                <div class="photo-image sopron-6"></div>
                                 <div class="photo-overlay">
                                     <h5>Yoga class</h5>
                                     <p>Morning hatha yoga</p>
@@ -540,21 +578,21 @@
 
                         <div class="photo-grid grid-3x1">
                             <div class="photo-item">
-                                <img src="Lipot 1.jpg" alt="Outdoor meditation">
+                                <div class="photo-image lipot-1"></div>
                                 <div class="photo-overlay">
                                     <h5>Mindfulness workshop</h5>
                                     <p>Learning about how manage stress</p>
                                 </div>
                             </div>
                             <div class="photo-item">
-                                <img src="Lipot 2.jpg" alt="Sustainability workshop">
+                                <div class="photo-image lipot-2"></div>
                                 <div class="photo-overlay">
                                     <h5>Outdoor meditation</h5>
                                     <p>Connecting to ourselves</p>
                                 </div>
                             </div>
                             <div class="photo-item">
-                                <img src="Lipot 3.jpg" alt="Team Building">
+                                <div class="photo-image lipot-3"></div>
                                 <div class="photo-overlay">
                                     <h5>Sustainability workshop</h5>
                                     <p>Promoting sustainable practices</p>

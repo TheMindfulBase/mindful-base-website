@@ -59,11 +59,16 @@
         }
 
         .logo {
-          width: 160px;
-          height: 160px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+        width: 160px;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('images/logo/Logo-cropped_transparent.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 8px;
         }
 
         .logo::before {
@@ -338,14 +343,12 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="header-content">
-          <div class="logo-container">
-              <div class="logo">
-                  <img src="Logo-cropped_transparent.svg" alt="The Mindful BAse Logo">
-              </div>
-              <h1 class="brand-name">The Mindful <strong>BAse</strong></h1>
-          </div>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo"></div>
+                    <h1 class="brand-name">The Mindful <strong>BAse</strong></h1>
+                </div>
           <p class="motto">
               Building <strong>B</strong>ridges with <strong>A</strong>wareness and fo<strong>s</strong>tering conn<strong>e</strong>ctions
           </p>

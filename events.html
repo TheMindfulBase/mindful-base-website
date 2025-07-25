@@ -59,11 +59,16 @@
         }
 
         .logo {
-          width: 160px;
-          height: 160px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+        width: 160px;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('images/logo/Logo-cropped_transparent.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 8px;
         }
 
         .logo::before {
@@ -322,6 +327,51 @@
             color: #2c3e50;
         }
 
+        /* Details Button Styling */
+        .details-button {
+            background: linear-gradient(135deg, #009540 0%, #007a35 100%);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 149, 64, 0.3);
+        }
+
+        .event-item .details-button {
+            background: linear-gradient(135deg, #C83176 0%, #A02961 100%);
+            box-shadow: 0 4px 15px rgba(200, 49, 118, 0.3);
+        }
+
+        .details-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 149, 64, 0.4);
+        }
+
+        .event-item .details-button:hover {
+            box-shadow: 0 6px 20px rgba(200, 49, 118, 0.4);
+        }
+
+        .details-button:active {
+            transform: translateY(0);
+        }
+
+        /* Collapsible Content */
+        .collapsible-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .collapsible-details.expanded {
+            max-height: 2000px;
+            transition: max-height 0.8s ease-in;
+        }
+
         /* Footer */
         footer {
             background: #009540;
@@ -439,13 +489,11 @@
     </style>
 </head>
 <body>
-    <header>
+   <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo-container">
-                    <div class="logo">
-                        <img src="Logo-cropped_transparent.svg" alt="The Mindful BAse Logo">
-                    </div>
+                    <div class="logo"></div>
                     <h1 class="brand-name">The Mindful <strong>BAse</strong></h1>
                 </div>
                 <p class="motto">
@@ -503,24 +551,28 @@
                                     📅 <strong>Date announcement coming soon!</strong> Stay tuned for details.
                                 </div>
 
-                                <div class="event-features">
-                                    <h5>Part I Features:</h5>
-                                    <ul>
-                                        <li>Brief mindfulness arrival practice and breathing techniques</li>
-                                        <li>Real-life communication sustainability examples</li>
-                                        <li>Active listening techniques for professional settings</li>
-                                        <li>WAIT & AWE communication strategies</li>
-                                        <li>Practical 10-15 minute activities</li>
-                                    </ul>
+                                <button class="details-button" onclick="toggleDetails('upcoming-details')">Details</button>
 
-                                    <h5>Part II Features:</h5>
-                                    <ul>
-                                        <li>Recap and reflection on active listening challenges</li>
-                                        <li>"Four elements of right speech" adapted for professional settings</li>
-                                        <li>"You are partly right" technique for constructive feedback</li>
-                                        <li>Handling difficult conversations in academic environments</li>
-                                        <li>Practical perspective-taking exercises</li>
-                                    </ul>
+                                <div class="collapsible-details" id="upcoming-details">
+                                    <div class="event-features">
+                                        <h5>Part I Features:</h5>
+                                        <ul>
+                                            <li>Brief mindfulness arrival practice and breathing techniques</li>
+                                            <li>Real-life communication sustainability examples</li>
+                                            <li>Active listening techniques for professional settings</li>
+                                            <li>WAIT & AWE communication strategies</li>
+                                            <li>Practical 10-15 minute activities</li>
+                                        </ul>
+
+                                        <h5>Part II Features:</h5>
+                                        <ul>
+                                            <li>Recap and reflection on active listening challenges</li>
+                                            <li>"Four elements of right speech" adapted for professional settings</li>
+                                            <li>"You are partly right" technique for constructive feedback</li>
+                                            <li>Handling difficult conversations in academic environments</li>
+                                            <li>Practical perspective-taking exercises</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -541,32 +593,6 @@
                     <div class="past-events-content">
                         <div class="event-item">
                             <div class="event-header">
-                                <h4>Awareness and Sustainability Retreat</h4>
-                                <div class="event-location">
-                                    <svg viewBox="0 0 24 24" class="location-icon">
-                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
-                                    </svg>
-                                    Lipót, Hungary (Szigetköz Island, sustainable place – Hotel Orchidea)
-                                </div>
-                            </div>
-                            <div class="event-details">
-                                <p><strong>Duration:</strong> 3-day weekend program (October 2024)</p>
-                                <p><strong>Focus:</strong> Individual and collective awareness through sustainability and wellness</p>
-
-                                <div class="event-features">
-                                    <h5>Key Features:</h5>
-                                    <ul>
-                                        <li><strong>Structured progression:</strong> From individual awareness (Part 1) to collective responsibility (Part 2)</li>
-                                        <li><strong>Neuroscience integration:</strong> "Neuroscience of breaks" and stress management with the neuroscientific basis</li>
-                                        <li><strong>Sustainability:</strong> Practical tips for reducing environmental footprint, methods for working together on a common goal (team building activity)</li>
-                                        <li><strong>Mindfulness and yoga:</strong> hatha yoga, yoga nidra, silent walks, guided meditations and breathing exercises, forest bathing (Shinrin yoku)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="event-item">
-                            <div class="event-header">
                                 <h4>Connect: Pause & Reflect Retreat</h4>
                                 <div class="event-location">
                                     <svg viewBox="0 0 24 24" class="location-icon">
@@ -579,20 +605,54 @@
                                 <p><strong>Duration:</strong> 3-day weekend program (May 2025)</p>
                                 <p><strong>Focus:</strong> Connection through mindfulness, empathy, and self-awareness</p>
 
-                                <div class="event-features">
-                                    <h5>Three-Pillar Approach:</h5>
-                                    <ul>
-                                        <li><strong>Me & Environment:</strong> Building meaningful connections with nature</li>
-                                        <li><strong>Me & You:</strong> Fostering empathy and emotional intelligence</li>
-                                        <li><strong>Me & Me:</strong> Creating space for introspection and personal growth</li>
-                                    </ul>
+                                <button class="details-button" onclick="toggleDetails('retreat2-details')">Details</button>
 
-                                    <h5>Key Features:</h5>
-                                    <ul>
-                                        <li><strong>Connection to nature and culture:</strong> mindful hill walks, historic monastery setting</li>
-                                        <li><strong>Workshops on mindful communication and journalling</strong></li>
-                                        <li><strong>Daily yoga and mindfulness practice:</strong> Morning hatha, evening yin/restorative, and pranayama</li>
-                                    </ul>
+                                <div class="collapsible-details" id="retreat2-details">
+                                    <div class="event-features">
+                                        <h5>Three-Pillar Approach:</h5>
+                                        <ul>
+                                            <li><strong>Me & Environment:</strong> Building meaningful connections with nature</li>
+                                            <li><strong>Me & You:</strong> Fostering empathy and emotional intelligence</li>
+                                            <li><strong>Me & Me:</strong> Creating space for introspection and personal growth</li>
+                                        </ul>
+
+                                        <h5>Key Features:</h5>
+                                        <ul>
+                                            <li><strong>Connection to nature and culture:</strong> mindful hill walks, historic monastery setting</li>
+                                            <li><strong>Workshops on mindful communication and journalling</strong></li>
+                                            <li><strong>Daily yoga and mindfulness practice:</strong> Morning hatha, evening yin/restorative, and pranayama</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="event-item">
+                            <div class="event-header">
+                                <h4>Awareness and Sustainability Retreat</h4>
+                                <div class="event-location">
+                                    <svg viewBox="0 0 24 24" class="location-icon">
+                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                    </svg>
+                                    Lipót, Hungary (Szigetköz Island, sustainable place – Hotel Orchidea)
+                                </div>
+                            </div>
+                            <div class="event-details">
+                                <p><strong>Duration:</strong> 3-day weekend program (October 2024)</p>
+                                <p><strong>Focus:</strong> Individual and collective awareness through sustainability and wellness</p>
+
+                                <button class="details-button" onclick="toggleDetails('retreat1-details')">Details</button>
+
+                                <div class="collapsible-details" id="retreat1-details">
+                                    <div class="event-features">
+                                        <h5>Key Features:</h5>
+                                        <ul>
+                                            <li><strong>Structured progression:</strong> From individual awareness (Part 1) to collective responsibility (Part 2)</li>
+                                            <li><strong>Neuroscience integration:</strong> "Neuroscience of breaks" and stress management with the neuroscientific basis</li>
+                                            <li><strong>Sustainability:</strong> Practical tips for reducing environmental footprint, methods for working together on a common goal (team building activity)</li>
+                                            <li><strong>Mindfulness and yoga:</strong> hatha yoga, yoga nidra, silent walks, guided meditations and breathing exercises, forest bathing (Shinrin yoku)</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -631,5 +691,20 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleDetails(detailsId) {
+            const detailsDiv = document.getElementById(detailsId);
+            const button = detailsDiv.previousElementSibling;
+
+            if (detailsDiv.classList.contains('expanded')) {
+                detailsDiv.classList.remove('expanded');
+                button.textContent = 'Details';
+            } else {
+                detailsDiv.classList.add('expanded');
+                button.textContent = 'Hide';
+            }
+        }
+    </script>
 </body>
 </html>
