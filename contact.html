@@ -58,30 +58,23 @@
             margin-bottom: 1.5rem;
         }
 
+        /* Convert logo to background image */
         .logo {
-          width: 160px;
-          height: 160px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+            width: 160px;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('images/logo/Logo-cropped_transparent.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 8px;
         }
 
         .logo::before {
             content: none;
         }
-        .logo {
-        width: 160px;
-        height: 160px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url('images/logo/Logo-cropped_transparent.svg');
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 8px;
-        }
-
 
         .brand-name {
           color: #2c3e50;
@@ -106,7 +99,6 @@
             margin: 0 auto;
             line-height: 1.5;
         }
-
 
         /* Navigation */
         nav {
@@ -168,61 +160,71 @@
             padding: 3rem 0;
         }
 
+        /* Make grid more mobile-friendly like about.html */
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-            gap: 4rem;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
             margin-top: 3rem;
         }
 
+        /* Match about.html container styling */
         .contact-info {
             background: white;
             border-radius: 20px;
-            padding: 3rem;
+            padding: 2.5rem;
             box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
         }
 
         .contact-info h3 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: #2c3e50;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             font-weight: 600;
         }
 
+        /* Make contact items more compact */
         .contact-item {
             display: flex;
             align-items: center;
             gap: 1rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             padding: 1rem;
             background: linear-gradient(135deg, #FCF0F6 0%, #F8E8F1 100%);
-            border-radius: 15px;
+            border-radius: 12px;
         }
 
         .contact-icon {
-            font-size: 2rem;
-            width: 60px;
+            font-size: 1.5rem;
+            width: 50px;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
         }
 
         .contact-icon svg {
-            width: 32px;
-            height: 32px;
+            width: 28px;
+            height: 28px;
             fill: #C83176;
         }
 
         .contact-details h4 {
             color: #2c3e50;
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+            font-size: 1.1rem;
         }
 
         .contact-details p {
             color: #555;
-            font-size: 1rem;
+            font-size: 0.95rem;
         }
 
         .contact-details a {
@@ -238,7 +240,7 @@
 
         .contact-details .social-links {
             display: flex;
-            gap: 1rem;
+            gap: 0.8rem;
             flex-wrap: wrap;
             margin-top: 0.5rem;
         }
@@ -246,14 +248,14 @@
         .contact-details .social-link {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            padding: 0.8rem 1.2rem;
+            gap: 0.4rem;
+            padding: 0.6rem 1rem;
             background: #C83176;
             color: white;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 20px;
             transition: all 0.3s ease;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 500;
         }
 
@@ -263,51 +265,27 @@
         }
 
         .contact-details .social-link svg {
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
             fill: currentColor;
         }
 
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .social-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.8rem 1.2rem;
-            background: #C83176;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            font-size: 1rem;
-        }
-
-        .social-link:hover {
-            background: #A02961;
-            transform: translateY(-2px);
-        }
-
-        .social-link svg {
-            width: 18px;
-            height: 18px;
-            fill: currentColor;
-        }
-
-        /* Contact Form */
+        /* Contact Form - match about.html styling */
         .newsletter-form {
             background: white;
             border-radius: 20px;
-            padding: 3rem;
+            padding: 2.5rem;
             box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .newsletter-form:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
         }
 
         .newsletter-form h3 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: #2c3e50;
             margin-bottom: 1rem;
             font-weight: 600;
@@ -317,37 +295,38 @@
         }
 
         .newsletter-form h3 svg {
-            width: 32px;
-            height: 32px;
+            width: 28px;
+            height: 28px;
             fill: #C83176;
         }
 
         .newsletter-description {
             color: #555;
-            margin-bottom: 2rem;
-            line-height: 1.7;
-            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            font-size: 1rem;
         }
 
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
         }
 
         .form-group label {
             display: block;
             color: #2c3e50;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
             font-weight: 500;
+            font-size: 0.95rem;
         }
 
         .form-group input,
         .form-group select,
         .form-group textarea {
             width: 100%;
-            padding: 1rem;
+            padding: 0.8rem;
             border: 2px solid #e8f0fe;
-            border-radius: 10px;
-            font-size: 1rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
             font-family: inherit;
             transition: border-color 0.3s ease;
             resize: vertical;
@@ -361,17 +340,17 @@
         }
 
         .form-group textarea {
-            min-height: 120px;
+            min-height: 100px;
             line-height: 1.5;
         }
 
         .submit-btn {
             background: linear-gradient(135deg, #C83176 0%, #A02961 100%);
             color: white;
-            padding: 1rem 2rem;
+            padding: 0.8rem 1.5rem;
             border: none;
-            border-radius: 25px;
-            font-size: 1.1rem;
+            border-radius: 20px;
+            font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -388,8 +367,8 @@
         }
 
         .submit-btn svg {
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
             fill: currentColor;
         }
 
@@ -461,7 +440,7 @@
             fill: currentColor;
         }
 
-        /* Responsive Design */
+        /* Responsive Design - match about.html */
         @media (max-width: 1024px) {
             .nav-links {
                 gap: 1rem;
@@ -474,7 +453,7 @@
 
             .contact-grid {
                 grid-template-columns: 1fr;
-                gap: 3rem;
+                gap: 2.5rem;
             }
         }
 
@@ -506,6 +485,7 @@
 
             .contact-grid {
                 grid-template-columns: 1fr;
+                gap: 2rem;
             }
 
             .contact-info,
@@ -517,8 +497,18 @@
                 gap: 1rem;
             }
 
-            .social-links {
+            .contact-details .social-links {
                 justify-content: center;
+            }
+
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.8rem;
+            }
+
+            .contact-icon {
+                width: auto;
             }
         }
     </style>
@@ -556,7 +546,7 @@
     <main>
         <div class="container">
             <section class="contact-section">
-                <h2 class="section-title">Let’s get connected!</h2>
+                <h2 class="section-title">Let's get connected!</h2>
                 <div class="contact-grid">
                     <!-- Contact Information -->
                     <div class="contact-info">
@@ -595,13 +585,13 @@
                             <div class="contact-details">
                                 <h4>Follow Us on Social Media</h4>
                                 <div class="social-links">
-                                    <a href="https://www.linkedin.com/company/the-mindful-base/" class="social-link" target="_blank">
+                                    <a href="https://www.linkedin.com/company/the-mindful-base/" class="social-link" target="_blank" rel="noopener noreferrer">
                                         <svg viewBox="0 0 24 24">
                                             <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/>
                                         </svg>
                                         LinkedIn
                                     </a>
-                                    <a href="https://www.instagram.com/the_mindful_base/" class="social-link" target="_blank">
+                                    <a href="https://www.instagram.com/the_mindful_base/" class="social-link" target="_blank" rel="noopener noreferrer">
                                         <svg viewBox="0 0 24 24">
                                             <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
                                         </svg>
@@ -621,7 +611,7 @@
                             Send Us a Message
                         </h3>
                         <p class="newsletter-description">
-                            Have a question, want to join our activities, or just want to connect? We'd love to hear from you! Send us a message and we'll get back to you as soon as possible.
+                            Have a question, want to join our activities, or just want to connect? We'd love to hear from you!
                         </p>
 
                         <form action="mailto:themindfulbase2025@gmail.com" method="post" enctype="text/plain">
@@ -637,7 +627,7 @@
 
                             <div class="form-group">
                                 <label for="message">Message *</label>
-                                <textarea id="message" name="message" rows="6" required placeholder="Tell us about your interest in our activities, ask a question, or just say hello..."></textarea>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your interest in our activities..."></textarea>
                             </div>
 
                             <button type="submit" class="submit-btn">
