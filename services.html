@@ -179,8 +179,8 @@
             color: #34495e;
             line-height: 1.8;
             margin-bottom: 3rem;
-            text-align: center;
-        }
+            text-align: left;
+          }
 
         .services-grid {
             display: grid;
@@ -209,15 +209,39 @@
         }
 
         .service-list li {
-            padding: 0.8rem 0;
+            padding: 1rem 0;
             color: #555;
-            font-size: 1.1rem;
+            font-size: 1.25rem;
+            font-weight: bold;
             position: relative;
             border-bottom: 1px solid rgba(200, 49, 118, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .service-list li:last-child {
             border-bottom: none;
+        }
+
+        .service-item-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .service-emoji {
+            font-size: 1.875rem; /* 50% larger than the text */
+        }
+
+        .service-description-text {
+            font-size: 1.1rem;
+            font-weight: normal;
+            color: #666;
+            text-align: center;
+            margin-top: 0.5rem;
+            line-height: 1.5;
         }
 
         /* Footer */
@@ -377,27 +401,81 @@
                 <div class="service-container">
                     <h2 class="section-title">What We Do</h2>
                     <div class="service-description">
-                        Our aim is to help people connect to themselves and others via mindful communication. We use awareness for building bridges with other people and between us and the surrounding environment. We promote interactions and inclusion, foster understanding of other cultures and perspectives, and promote environmental sustainability. We organise events and retreats, targeting diverse types of audience, by making use of meditation techniques, interactive workshops and various activities.
+                        <p><strong>Our mission:</strong> We create a space where people can slow down, listen better, and build connections that matter - for themselves, their communities, and the planet.
+                        <br><br>
+                        <p><strong>Our interests:</strong> Mental well-being, mindfulness, effective communication, environmental sustainability, and science outreach.
+                        <br><br>
+                        <p><strong>What is mindfulness?</strong> Mindfulness is the ability of focusing on the present moment while observing ourselves and the surrounding environment in an open and non-judgmental way.
+                        <br><br>
+                        <p><strong>What we do:</strong> We keep things simple but effective - using workshops, group activities, meditation and time in nature to help people feel more connected and included.
                     </div>
 
                     <div class="services-grid">
                         <div class="service-card">
-                            <h3>Events</h3><h4>Mindful communication strategies, awareness and sustainability</h4>
+                            <h3>What We Offer</h3>
                             <ul class="service-list">
-                                <li>Workshops</li>
-                                <li>Retreats</li>
-                                <li>Seminars</li>
-                                <li>Science communication events</li>
+                                <li>
+                                    <div class="service-item-header">
+                                        <span class="service-emoji">📝</span>
+                                        <span>Workshops</span>
+                                    </div>
+                                    <div class="service-description-text">Learn to communicate with more care and clarity, practice mindfulness techniques including meditation, expand your knowledge about environmental sustainability</div>
+                                </li>
+                                <li>
+                                    <div class="service-item-header">
+                                        <span class="service-emoji">🏞️</span>
+                                        <span>Retreats</span>
+                                    </div>
+                                    <div class="service-description-text">Take time to unwind, connect, and recharge in nature</div>
+                                </li>
+                                <li>
+                                    <div class="service-item-header">
+                                        <span class="service-emoji">🗣️</span>
+                                        <span>Seminars</span>
+                                    </div>
+                                    <div class="service-description-text">Bring mindfulness and better communication to your personal life and workplace</div>
+                                </li>
+                                <li>
+                                    <div class="service-item-header">
+                                        <span class="service-emoji">🔬</span>
+                                        <span>Science communication events</span>
+                                    </div>
+                                    <div class="service-description-text">Discover scientific topics in a comprehensive way</div>
+                                </li>
                             </ul>
                         </div>
 
                         <div class="service-card">
                             <h3>Our Approach</h3>
                             <ul class="service-list">
-                                <li>Interactive talks and workshops</li>
-                                <li>Meditation and breathing techniques</li>
-                                <li>Dynamic group activities</li>
-                                <li>Yoga and outdoor activities</li>
+                                <li>
+                                    <div class="service-item-header">
+                                        <span class="service-emoji">💬</span>
+                                        <span>Interactive talks and workshops</span>
+                                    </div>
+                                    <div class="service-description-text">Enjoy a safe environment for open discussions and inclusivity</div>
+                                </li>
+                                <li>
+                                    <div class="service-item-header">
+                                        <span class="service-emoji">🧘</span>
+                                        <span>Meditation and breathing techniques</span>
+                                    </div>
+                                    <div class="service-description-text">Learn how to use your breath for enjoying the present moment</div>
+                                </li>
+                                <li>
+                                    <div class="service-item-header">
+                                        <span class="service-emoji">👥</span>
+                                        <span>Dynamic group activities</span>
+                                    </div>
+                                    <div class="service-description-text">Get connected with others in a creative way</div>
+                                </li>
+                                <li>
+                                    <div class="service-item-header">
+                                        <span class="service-emoji">🤸</span>
+                                        <span>Yoga and outdoor activities</span>
+                                    </div>
+                                    <div class="service-description-text">Connect with your mind, breath, body and nature</div>
+                                </li>
                             </ul>
                         </div>
                     </div>
