@@ -395,9 +395,37 @@
                 gap: 1rem;
             }
 
+            /* FIXED: Remove fixed heights and flex properties on mobile */
             .service-list li {
-                min-height: auto;
+                min-height: auto !important;
                 padding: 1.5rem 0;
+                flex: none !important;
+            }
+
+            /* Ensure proper spacing between content and borders */
+            .service-description-text {
+                padding-bottom: 0.5rem;
+            }
+
+            /* Add more padding to service cards on mobile */
+            .service-card {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        /* Additional fix for very small screens */
+        @media (max-width: 480px) {
+            .service-card {
+                padding: 1.5rem 1rem;
+            }
+
+            .service-list li {
+                padding: 1rem 0;
+            }
+
+            .service-description-text {
+                font-size: 1rem;
+                line-height: 1.4;
             }
         }
     </style>
