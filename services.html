@@ -3,7 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What We Do - The Mindful BAse</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>What We Do - The Mindful BAse | Mindfulness Workshops, Retreats & Communication Training | Vienna</title>
+    <meta name="description" content="Discover The Mindful BAse services: mindfulness workshops, meditation retreats, communication training, and science outreach. Learn mindful communication, meditation techniques, and sustainability practices in Vienna.">
+    <meta name="keywords" content="mindfulness workshops Vienna, meditation retreats, mindful communication training, sustainability workshops, science communication, breathing techniques, yoga retreats, environmental awareness, group meditation">
+    <meta name="author" content="The Mindful BAse">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://themindfulbase.com/services.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="What We Do - The Mindful BAse | Mindfulness Services & Training">
+    <meta property="og:description" content="Discover our mindfulness workshops, meditation retreats, communication training, and science outreach programs. Creating connections through awareness and sustainability.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://themindfulbase.com/services.html">
+    <meta property="og:image" content="https://themindfulbase.com/images/services/mindfulness-workshop-overview.jpg">
+    <meta property="og:image:alt" content="The Mindful BAse workshops and services">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="The Mindful BAse">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="What We Do - The Mindful BAse | Mindfulness Services & Training">
+    <meta name="twitter:description" content="Discover our mindfulness workshops, meditation retreats, communication training, and science outreach programs. Creating connections through awareness and sustainability.">
+    <meta name="twitter:image" content="https://themindfulbase.com/images/services/mindfulness-workshop-overview.jpg">
+    <meta name="twitter:image:alt" content="The Mindful BAse workshops and services">
+    
+    <!-- Schema.org Structured Data for Services -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Mindfulness and Communication Training Services",
+        "description": "Comprehensive mindfulness workshops, meditation retreats, communication training, and science outreach programs",
+        "provider": {
+            "@type": "Organization",
+            "name": "The Mindful BAse",
+            "url": "https://themindfulbase.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Vienna",
+                "addressCountry": "Austria"
+            }
+        },
+        "serviceType": "Training and Education",
+        "areaServed": {
+            "@type": "Place",
+            "name": "Vienna, Austria and Online"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Mindfulness Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Mindfulness Workshops",
+                        "description": "Learn to communicate with more care and clarity, practice mindfulness techniques including meditation"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Meditation Retreats",
+                        "description": "Take time to unwind, connect, and recharge in nature"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Communication Seminars",
+                        "description": "Bring mindfulness and better communication to your personal life and workplace"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Science Communication Events",
+                        "description": "Discover scientific topics in a comprehensive way"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
     <style>
         * {
             margin: 0;
@@ -22,6 +112,22 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+        }
+
+        /* Skip to main content for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
         }
 
         /* Header */
@@ -104,7 +210,6 @@
             margin: 0 auto;
             line-height: 1.5;
         }
-
 
         /* Navigation */
         nav {
@@ -431,11 +536,14 @@
     </style>
 </head>
 <body>
-  <header>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+  <header role="banner">
         <div class="container">
             <div class="header-content">
                 <div class="logo-container">
-                    <div class="logo"></div>
+                    <div class="logo" role="img" aria-label="The Mindful BAse Logo"></div>
                     <h1 class="brand-name">The Mindful <strong>BAse</strong></h1>
                 </div>
           <p class="motto">
@@ -445,13 +553,13 @@
   </div>
 </header>
 
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-container">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html" class="active">What We Do</a></li>
+                    <li><a href="services.html" class="active" aria-current="page">What We Do</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -460,11 +568,12 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main-content" role="main">
         <div class="container">
-            <section class="services-section">
+            <section class="services-section" aria-labelledby="services-heading">
                 <div class="service-container">
-                    <h2 class="section-title">What We Do</h2>
+                    <!-- H2: Main section heading -->
+                    <h2 id="services-heading" class="section-title">What We Do</h2>
                     <div class="service-description">
                         <p><strong>Our mission:</strong> We create a space where people can slow down, listen better, and build connections that matter - for themselves, their communities, and the planet.
                         <br><br>
@@ -476,73 +585,75 @@
                     </div>
 
                     <div class="services-grid">
-                        <div class="service-card">
-                            <h3>What We Offer</h3>
+                        <article class="service-card" itemscope itemtype="https://schema.org/Service">
+                            <!-- H3: Service category heading -->
+                            <h3 itemprop="name">What We Offer</h3>
                             <ul class="service-list">
-                                <li>
+                                <li itemscope itemtype="https://schema.org/Service">
                                     <div class="service-item-header">
-                                        <span class="service-emoji">📝</span>
-                                        <span>Workshops</span>
+                                        <span class="service-emoji" aria-hidden="true">📝</span>
+                                        <span itemprop="name">Workshops</span>
                                     </div>
-                                    <div class="service-description-text">Learn to communicate with more care and clarity, practice mindfulness techniques including meditation, expand your knowledge about environmental sustainability</div>
+                                    <div class="service-description-text" itemprop="description">Learn to communicate with more care and clarity, practice mindfulness techniques including meditation, expand your knowledge about environmental sustainability</div>
                                 </li>
-                                <li>
+                                <li itemscope itemtype="https://schema.org/Service">
                                     <div class="service-item-header">
-                                        <span class="service-emoji">🏞️</span>
-                                        <span>Retreats</span>
+                                        <span class="service-emoji" aria-hidden="true">🏞️</span>
+                                        <span itemprop="name">Retreats</span>
                                     </div>
-                                    <div class="service-description-text">Take time to unwind, connect, and recharge in nature</div>
+                                    <div class="service-description-text" itemprop="description">Take time to unwind, connect, and recharge in nature</div>
                                 </li>
-                                <li>
+                                <li itemscope itemtype="https://schema.org/Service">
                                     <div class="service-item-header">
-                                        <span class="service-emoji">🗣️</span>
-                                        <span>Seminars</span>
+                                        <span class="service-emoji" aria-hidden="true">🗣️</span>
+                                        <span itemprop="name">Seminars</span>
                                     </div>
-                                    <div class="service-description-text">Bring mindfulness and better communication to your personal life and workplace</div>
+                                    <div class="service-description-text" itemprop="description">Bring mindfulness and better communication to your personal life and workplace</div>
                                 </li>
-                                <li>
+                                <li itemscope itemtype="https://schema.org/Service">
                                     <div class="service-item-header">
-                                        <span class="service-emoji">🔬</span>
-                                        <span>Science communication events</span>
+                                        <span class="service-emoji" aria-hidden="true">🔬</span>
+                                        <span itemprop="name">Science communication events</span>
                                     </div>
-                                    <div class="service-description-text">Discover scientific topics in a comprehensive way</div>
+                                    <div class="service-description-text" itemprop="description">Discover scientific topics in a comprehensive way</div>
                                 </li>
                             </ul>
-                        </div>
+                        </article>
 
-                        <div class="service-card">
-                            <h3>Our Approach</h3>
+                        <article class="service-card" itemscope itemtype="https://schema.org/Service">
+                            <!-- H3: Service category heading -->
+                            <h3 itemprop="name">Our Approach</h3>
                             <ul class="service-list">
-                                <li>
+                                <li itemscope itemtype="https://schema.org/Service">
                                     <div class="service-item-header">
-                                        <span class="service-emoji">💬</span>
-                                        <span>Interactive talks and workshops</span>
+                                        <span class="service-emoji" aria-hidden="true">💬</span>
+                                        <span itemprop="name">Interactive talks and workshops</span>
                                     </div>
-                                    <div class="service-description-text">Enjoy a safe environment for open discussions and inclusivity</div>
+                                    <div class="service-description-text" itemprop="description">Enjoy a safe environment for open discussions and inclusivity</div>
                                 </li>
-                                <li>
+                                <li itemscope itemtype="https://schema.org/Service">
                                     <div class="service-item-header">
-                                        <span class="service-emoji">🧘</span>
-                                        <span>Meditation and breathing techniques</span>
+                                        <span class="service-emoji" aria-hidden="true">🧘</span>
+                                        <span itemprop="name">Meditation and breathing techniques</span>
                                     </div>
-                                    <div class="service-description-text">Learn how to use your breath for enjoying the present moment</div>
+                                    <div class="service-description-text" itemprop="description">Learn how to use your breath for enjoying the present moment</div>
                                 </li>
-                                <li>
+                                <li itemscope itemtype="https://schema.org/Service">
                                     <div class="service-item-header">
-                                        <span class="service-emoji">👥</span>
-                                        <span>Dynamic group activities</span>
+                                        <span class="service-emoji" aria-hidden="true">👥</span>
+                                        <span itemprop="name">Dynamic group activities</span>
                                     </div>
-                                    <div class="service-description-text">Get connected with others in a creative way</div>
+                                    <div class="service-description-text" itemprop="description">Get connected with others in a creative way</div>
                                 </li>
-                                <li>
+                                <li itemscope itemtype="https://schema.org/Service">
                                     <div class="service-item-header">
-                                        <span class="service-emoji">🤸</span>
-                                        <span>Yoga and outdoor activities</span>
+                                        <span class="service-emoji" aria-hidden="true">🤸</span>
+                                        <span itemprop="name">Yoga and outdoor activities</span>
                                     </div>
-                                    <div class="service-description-text">Connect with your mind, breath, body and nature</div>
+                                    <div class="service-description-text" itemprop="description">Connect with your mind, breath, body and nature</div>
                                 </li>
                             </ul>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </section>
@@ -560,18 +671,18 @@
                 </ul>
             </div>
             <div class="social-media">
-                <a href="mailto:themindfulbase2025@gmail.com" class="social-icon" title="Email">
-                    <svg viewBox="0 0 24 24">
+                <a href="mailto:themindfulbase2025@gmail.com" class="social-icon" title="Email" aria-label="Email The Mindful BAse">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
                     </svg>
                 </a>
-                <a href="https://www.linkedin.com/company/the-mindful-base/" class="social-icon" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24">
+                <a href="https://www.linkedin.com/company/the-mindful-base/" class="social-icon" title="LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="The Mindful BAse on LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0,0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/>
                     </svg>
                 </a>
-                <a href="https://www.instagram.com/the_mindful_base/" class="social-icon" title="Instagram" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24">
+                <a href="https://www.instagram.com/the_mindful_base/" class="social-icon" title="Instagram" target="_blank" rel="noopener noreferrer" aria-label="The Mindful BAse on Instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
                     </svg>
                 </a>

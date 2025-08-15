@@ -3,7 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - The Mindful BAse</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Contact Us - The Mindful BAse | Get in Touch | Vienna Mindfulness Workshops</title>
+    <meta name="description" content="Get in touch with The Mindful BAse in Vienna, Austria. Contact us for mindfulness workshops, NeuroMindfulness coaching, and sustainable communication training. Let's get connected!">
+    <meta name="keywords" content="contact mindful base, Vienna mindfulness contact, mindfulness workshops inquiry, NeuroMindfulness coaching contact, sustainable communication Vienna, mindful communication training contact">
+    <meta name="author" content="The Mindful BAse">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://themindfulbase.com/contact.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Us - The Mindful BAse | Get in Touch">
+    <meta property="og:description" content="Get in touch with The Mindful BAse in Vienna, Austria. Contact us for mindfulness workshops and NeuroMindfulness coaching.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://themindfulbase.com/contact.html">
+    <meta property="og:image" content="https://themindfulbase.com/images/logo/Logo-cropped_transparent.svg">
+    <meta property="og:image:alt" content="The Mindful BAse Contact Information">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="The Mindful BAse">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us - The Mindful BAse | Get in Touch">
+    <meta name="twitter:description" content="Get in touch with The Mindful BAse in Vienna, Austria. Contact us for mindfulness workshops and NeuroMindfulness coaching.">
+    <meta name="twitter:image" content="https://themindfulbase.com/images/logo/Logo-cropped_transparent.svg">
+    <meta name="twitter:image:alt" content="The Mindful BAse Contact Information">
+    
+    <!-- Schema.org Structured Data for Contact Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "The Mindful BAse",
+            "url": "https://themindfulbase.com",
+            "email": "themindfulbase2025@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Vienna",
+                "addressCountry": "Austria"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Customer Service",
+                "email": "themindfulbase2025@gmail.com",
+                "availableLanguage": ["English", "German"]
+            },
+            "sameAs": [
+                "https://www.linkedin.com/company/the-mindful-base/",
+                "https://www.instagram.com/the_mindful_base/"
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "The Mindful BAse",
+        "description": "Mindfulness workshops and communication training in Vienna",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Vienna",
+            "addressCountry": "AT"
+        },
+        "email": "themindfulbase2025@gmail.com",
+        "url": "https://themindfulbase.com",
+        "serviceArea": {
+            "@type": "Place",
+            "name": "Vienna, Austria"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Mindfulness Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Mindfulness Workshops",
+                        "description": "Interactive mindfulness and communication workshops"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "NeuroMindfulness Coaching",
+                        "description": "Individual NeuroMindfulness coaching sessions"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
     <style>
         * {
             margin: 0;
@@ -22,6 +121,22 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+        }
+
+        /* Skip to main content for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
         }
 
         /* Header */
@@ -540,11 +655,14 @@
     </style>
 </head>
 <body>
-    <header>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header role="banner">
         <div class="container">
             <div class="header-content">
                 <div class="logo-container">
-                    <div class="logo"></div>
+                    <div class="logo" role="img" aria-label="The Mindful BAse Logo"></div>
                     <h1 class="brand-name">The Mindful <strong>BAse</strong></h1>
                 </div>
                 <p class="motto">
@@ -554,7 +672,7 @@
         </div>
     </header>
 
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-container">
                 <ul class="nav-links">
@@ -563,62 +681,69 @@
                     <li><a href="services.html">What We Do</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                    <li><a href="contact.html" class="active" aria-current="page">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main>
+    <main id="main-content" role="main">
         <div class="container">
-            <section class="contact-section">
-                <h2 class="section-title">Let's get connected!</h2>
+            <section class="contact-section" aria-labelledby="contact-heading">
+                <!-- H2: Main section heading -->
+                <h2 id="contact-heading" class="section-title">Let's get connected!</h2>
                 <div class="contact-grid">
                     <!-- Contact Information -->
-                    <div class="contact-info">
+                    <article class="contact-info" itemscope itemtype="https://schema.org/Organization">
+                        <!-- H3: Contact information subsection -->
                         <h3>Contact Information</h3>
 
                         <div class="contact-item">
-                            <div class="contact-icon">
+                            <div class="contact-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24">
                                     <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
                                 </svg>
                             </div>
                             <div class="contact-details">
+                                <!-- H4: Specific contact detail -->
                                 <h4>Location</h4>
-                                <p>Vienna, Austria</p>
+                                <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                    <span itemprop="addressLocality">Vienna</span>, <span itemprop="addressCountry">Austria</span>
+                                </p>
                             </div>
                         </div>
 
                         <div class="contact-item">
-                            <div class="contact-icon">
+                            <div class="contact-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24">
                                     <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
                                 </svg>
                             </div>
                             <div class="contact-details">
+                                <!-- H4: Specific contact detail -->
                                 <h4>Email</h4>
-                                <p><a href="mailto:themindfulbase2025@gmail.com">themindfulbase2025@gmail.com</a></p>
+                                <p><a href="mailto:themindfulbase2025@gmail.com" itemprop="email" aria-label="Send email to The Mindful BAse">themindfulbase2025@gmail.com</a></p>
                             </div>
                         </div>
 
                         <div class="contact-item">
-                            <div class="contact-icon">
+                            <div class="contact-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24">
                                     <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z"/>
                                 </svg>
                             </div>
                             <div class="contact-details">
+                                <!-- H4: Specific contact detail -->
                                 <h4>Follow Us on Social Media</h4>
                                 <div class="social-links">
-                                    <a href="https://www.linkedin.com/company/the-mindful-base/" class="social-link" target="_blank" rel="noopener noreferrer">
-                                        <svg viewBox="0 0 24 24">
+                                    <a href="https://www.linkedin.com/company/the-mindful-base/" class="social-link" target="_blank" rel="noopener noreferrer" itemprop="sameAs" aria-label="Follow The Mindful BAse on LinkedIn">
+                                        <svg viewBox="0 0 24 24" aria-hidden="true">
                                             <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/>
                                         </svg>
                                         LinkedIn
                                     </a>
-                                    <a href="https://www.instagram.com/the_mindful_base/" class="social-link" target="_blank" rel="noopener noreferrer">
-                                        <svg viewBox="0 0 24 24">
+                                    <a href="https://www.instagram.com/the_mindful_base/" class="social-link" target="_blank" rel="noopener noreferrer" itemprop="sameAs" aria-label="Follow The Mindful BAse on Instagram">
+                                        <svg viewBox="0 0 24 24" aria-hidden="true">
                                             <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
                                         </svg>
                                         Instagram
@@ -626,12 +751,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Contact Us Form -->
-                    <div class="newsletter-form">
+                    <article class="newsletter-form">
+                        <!-- H3: Contact form subsection -->
                         <h3>
-                            <svg viewBox="0 0 24 24">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
                             </svg>
                             Send Us a Message
@@ -670,13 +796,13 @@
                             </div>
 
                             <button type="submit" class="submit-btn" id="submitBtn">
-                                <svg viewBox="0 0 24 24">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M6.2,2.44L18.1,8.53C20.25,9.46 20.25,12.54 18.1,13.47L6.2,19.56C4.05,20.49 1.63,18.54 2.24,16.17L3.41,12L2.24,7.83C1.63,5.46 4.05,3.51 6.2,2.44Z"/>
                                 </svg>
                                 Send Message
                             </button>
                         </form>
-                    </div>
+                    </article>
                 </div>
             </section>
         </div>
@@ -693,16 +819,23 @@
                 </ul>
             </div>
             <div class="social-media">
-                <a href="mailto:themindfulbase2025@gmail.com" class="social-icon" title="Email">
-                    <svg viewBox="0 0 24 24">
+                <a href="mailto:themindfulbase2025@gmail.com" class="social-icon" title="Email us" aria-label="Email The Mindful BAse">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
                     </svg>
                 </a>
-                <a href="https://www.linkedin.com/company/the-mindful-base/" class="social-icon" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24">
+                <a href="https://www.linkedin.com/company/the-mindful-base/" class="social-icon" title="Follow us on LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="The Mindful BAse on LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/>
                     </svg>
                 </a>
-                <a href="https://www.instagram.com/the_mindful_base/" class="social-icon" title="Instagram" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16
+                <a href="https://www.instagram.com/the_mindful_base/" class="social-icon" title="Follow us on Instagram" target="_blank" rel="noopener noreferrer" aria-label="The Mindful BAse on Instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
