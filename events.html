@@ -443,6 +443,37 @@
             transform: translateY(0);
         }
 
+        .registration-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #009540 0%, #007a35 100%);
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 149, 64, 0.3);
+    text-align: center;
+}
+
+.registration-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 149, 64, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+.registration-button:active {
+    transform: translateY(0);
+}
+        .registration-button:focus {
+    outline: 2px solid #009540;
+    outline-offset: 2px;
+}
+        
         /* Collapsible Content */
         .collapsible-details {
             max-height: 0;
@@ -639,8 +670,13 @@
                             <div class="event-details">
                                 <p><strong>Format:</strong> 90-minute sessions, offered in two parts</p>
                                 <p><strong>Language:</strong> English</p>
-                                <p><strong>Registration:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSecT9Dox2_eviaJOtDDf3b7SoF4YspgfGoNtrydoKgEbnUW4A/viewform?usp=dialog">Google form</a></p
-                                <p><strong>Cost:</strong> Free</p>
+                                <p><strong>Registration:</strong> 
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSecT9Dox2_eviaJOtDDf3b7SoF4YspgfGoNtrydoKgEbnUW4A/viewform?usp=dialog">Google form
+                                     class="registration-button" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer">
+                                   Register Now</a></p
+                                <p><strong>Price:</strong> free</p>
 
                                 <div class="date-announcement">
                                     📅 <strong>Dates:</strong><br>
@@ -656,19 +692,21 @@
                                         <h5>Part I Features:</h5>
                                         <ul>
                                             <li>Brief mindfulness arrival practice and breathing techniques</li>
-                                            <li>Real-life communication sustainability examples</li>
-                                            <li>Active listening techniques for professional settings</li>
-                                            <li>WAIT & AWE communication strategies</li>
-                                            <li>Practical 10-15 minute activities</li>
+                                            <li>Real-life communication challenges</li>
+                                            <li>"I am here for you" presence-building techniques</li>
+                                            <li>WAIT & AWE communication strategies for everyday interactions</li>
+                                            <li>Active listening techniques with group feedback</li>
+                                            <li>Interactive discussions and breakout activities</li>
                                         </ul>
 
                                         <h5>Part II Features:</h5>
                                         <ul>
-                                            <li>Recap and reflection on active listening challenges</li>
-                                            <li>"Four elements of right speech" adapted for professional settings</li>
-                                            <li>"You are partly right" technique for constructive feedback</li>
-                                            <li>Handling difficult conversations in academic environments</li>
-                                            <li>Practical perspective-taking exercises</li>
+                                            <li>Centring practices and reflection on Part I insights</li>
+                                            <li>Building bridges through two-way communication foundations</li>
+                                            <li>Four elements of construcitve dialogue for daily relationships</li>
+                                            <li>"You are partly right" technique for understanding different perspectives<li>
+                                            <li>Navigating difficult conversations</li>
+                                            <li>Practical perspective-taking exercises with supporting feedback</li>
                                         </ul>
                                     </div>
                                 </div>
