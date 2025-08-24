@@ -3,3 +3,4 @@ Embedded images - functioning at 20.07.2025 12:34
 Updated links - functioning at 26.07.2025 14:31
 
 SEO optimisation - functioning at 15.08.2025 20:47
+Mobile version - functioning at 24.08.2025 15:32
